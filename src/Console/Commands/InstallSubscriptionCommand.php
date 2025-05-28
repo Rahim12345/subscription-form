@@ -16,6 +16,7 @@ class InstallSubscriptionCommand extends Command
         $this->call('vendor:publish', ['--tag' => 'migrations']);
         $this->call('vendor:publish', ['--tag' => 'views']);
         $this->call('vendor:publish', ['--tag' => 'controllers']);
+        $this->call('vendor:publish', ['--tag' => 'models']);
 
         // Append routes
         $routeFile = base_path('routes/web.php');

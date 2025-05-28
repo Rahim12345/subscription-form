@@ -20,6 +20,10 @@ class SubscriptionServiceProvider extends ServiceProvider
             __DIR__ . '/../src/Http/Controllers/SubscriptionController.php' => app_path('Http/Controllers/SubscriptionController.php'),
         ], 'controllers');
 
+        $this->publishes([
+            __DIR__ . '/../src/Models/Subscription.php' => app_path('Models/Subscription.php'),
+        ], 'models');
+
         $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'subscription');
