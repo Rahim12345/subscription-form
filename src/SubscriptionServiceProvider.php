@@ -10,12 +10,12 @@ class SubscriptionServiceProvider extends ServiceProvider
     {
         // Migration
         $this->publishes([
-            __DIR__ . '/../database/migrations/create_subscriptions_table.php' => database_path('migrations/' . date('Y_m_d_His') . '_create_subscriptions_table.php'),
+            __DIR__ . '/../src/database/migrations/create_subscriptions_table.php' => database_path('migrations/' . date('Y_m_d_His') . '_create_subscriptions_table.php'),
         ], 'migrations');
 
         // Views
         $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/vendor/subscription-form'),
+            __DIR__ . '/../src/resources/views' => resource_path('views/vendor/subscription-form'),
         ], 'views');
 
         // Controller (istəyə bağlı)

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
-use RsCode\SubscriptionForm\Models\Subscription;
+use App\Models\Subscription;
 
 class SubscriptionController extends Controller
 {
