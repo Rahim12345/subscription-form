@@ -1,0 +1,23 @@
+{
+  "name": "rs-code/subscription-form",
+  "description": "Simple subscription form for Laravel",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "RsCode\\SubscriptionForm\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "illuminate/support": "^12.0",
+    "illuminate/database": "^12.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RsCode\\SubscriptionForm\\SubscriptionServiceProvider"
+      ]
+    }
+  }
+}
