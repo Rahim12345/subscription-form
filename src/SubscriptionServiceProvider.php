@@ -17,18 +17,18 @@ class SubscriptionServiceProvider extends ServiceProvider
         ], 'views');
 
         $this->publishes([
-            __DIR__ . '/../src/Http/Controllers/SubscriptionController.php' => app_path('Http/Controllers/SubscriptionController.php'),
+            __DIR__ . '/../src/Http/Controllers/RSCODE/SubscriptionController.php' => app_path('Http/Controllers/RSCODE/SubscriptionController.php'),
         ], 'controllers');
 
         $this->publishes([
             __DIR__ . '/../src/Models/Subscription.php' => app_path('Models/Subscription.php'),
         ], 'models');
 
-        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+        $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'subscription');
+        $this->loadViewsFrom(__DIR__ . '/views', 'subscription');
 
-        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
     }
 
 
