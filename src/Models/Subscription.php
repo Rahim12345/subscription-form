@@ -6,5 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Subscription extends Model
 {
-    protected $fillable = ['email'];
+    protected $table = 'subscriptions';
+    protected $guarded = [];
 }

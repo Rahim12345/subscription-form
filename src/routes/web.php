@@ -1,7 +1,6 @@
 <?php
 
+use App\Http\Controllers\RSCODE\SubscriptionController;
 use Illuminate\Support\Facades\Route;
-use App\Controllers\SubscriptionController;
 
-Route::get('/subscribe', [SubscriptionController::class, 'form']);
-Route::post('/subscribe', [SubscriptionController::class, 'store']);
+Route::resource('/subscribe', SubscriptionController::class);
