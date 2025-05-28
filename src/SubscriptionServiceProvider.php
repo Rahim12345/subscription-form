@@ -10,7 +10,7 @@ class SubscriptionServiceProvider extends ServiceProvider
     {
         // Migration
         $this->publishes([
-            __DIR__ . '/../database/migrations/create_subscriptions_table.php.stub' => database_path('migrations/' . date('Y_m_d_His') . '_create_subscriptions_table.php'),
+            __DIR__ . '/../database/migrations/create_subscriptions_table.php' => database_path('migrations/' . date('Y_m_d_His') . '_create_subscriptions_table.php'),
         ], 'migrations');
 
         // Views
