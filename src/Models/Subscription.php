@@ -1,6 +1,6 @@
 <?php
 
-namespace RsCode\SubscriptionForm\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

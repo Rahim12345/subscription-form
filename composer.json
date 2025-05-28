@@ -5,7 +5,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "RsCode\\SubscriptionForm\\": "src/"
+      "App\\": "src/"
     }
   },
   "require": {
@@ -16,7 +16,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "RsCode\\SubscriptionForm\\SubscriptionServiceProvider"
+        "App\\SubscriptionServiceProvider"
       ]
     }
   }

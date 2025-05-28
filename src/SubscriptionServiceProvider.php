@@ -1,6 +1,6 @@
 <?php
 
-namespace RsCode\SubscriptionForm;
+namespace App;
 
 use Illuminate\Support\ServiceProvider;
 

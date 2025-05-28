@@ -1,8 +1,8 @@
 <?php
 
-namespace RsCode\SubscriptionForm;
+namespace App;
 
-use RsCode\SubscriptionForm\Models\Subscription;
+use App\Models\Subscription;
 
 class SubscriptionService
 {
