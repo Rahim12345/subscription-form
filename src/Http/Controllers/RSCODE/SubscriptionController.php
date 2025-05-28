@@ -37,10 +37,11 @@ class SubscriptionController extends Controller
 
         Subscription::create([
             'email' => $request->email,
+            'ip_address' => $request->ip(),
         ]);
 
         return response()->json([
-            'message' => 'Uğurla abunə oldunuz',
+            'message' => __('rs.successfully_subscription'),
         ]);
     }
 
