@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'rs-code/subscription-form',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'c4a75eb6b58d2bfcba1af9c09680bb13035d2534',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -158,9 +158,9 @@
             'dev_requirement' => false,
         ),
         'rs-code/subscription-form' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'c4a75eb6b58d2bfcba1af9c09680bb13035d2534',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

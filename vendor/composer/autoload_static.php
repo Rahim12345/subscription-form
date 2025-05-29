@@ -31,10 +31,6 @@ class ComposerStaticIniteab85a28a6e5e736ec5b9d1ee5a585f0
             'Symfony\\Component\\Translation\\' => 30,
             'Symfony\\Component\\Clock\\' => 24,
         ),
-        'R' => 
-        array (
-            'RsCode\\SubscriptionForm\\' => 24,
-        ),
         'P' => 
         array (
             'Psr\\SimpleCache\\' => 16,
@@ -91,10 +87,6 @@ class ComposerStaticIniteab85a28a6e5e736ec5b9d1ee5a585f0
         'Symfony\\Component\\Clock\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/clock',
-        ),
-        'RsCode\\SubscriptionForm\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'Psr\\SimpleCache\\' => 
         array (

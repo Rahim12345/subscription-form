@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace RsCode\SubscriptionForm;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -45,7 +45,7 @@ class SubscriptionServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->commands([
-            \App\Console\Commands\InstallSubscriptionCommand::class,
+            RsCode\SubscriptionForm\Console\Commands\InstallSubscriptionCommand::class,
         ]);
     }
 }
