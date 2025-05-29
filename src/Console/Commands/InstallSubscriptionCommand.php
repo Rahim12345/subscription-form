@@ -17,7 +17,7 @@ class InstallSubscriptionCommand extends Command
         $this->call('vendor:publish', ['--tag' => 'views']);
         $this->call('vendor:publish', ['--tag' => 'controllers']);
         $this->call('vendor:publish', ['--tag' => 'models']);
-        $this->call('vendor:publish', ['--tag' => 'langs']);
+        $this->call('vendor:publish', ['--tag' => 'lang']);
 
         $this->info('Subscription package installed successfully.');
     }

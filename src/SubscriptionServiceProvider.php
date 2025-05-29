@@ -25,8 +25,8 @@ class SubscriptionServiceProvider extends ServiceProvider
         ], 'models');
 
         $this->publishes([
-            __DIR__ . '/../src/langs/az/rs.php' => base_path('langs/az/rs.php'),
-        ], 'langs');
+            __DIR__ . '/../src/lang/az/rs.php' => base_path('lang/az/rs.php'),
+        ], 'lang');
 
         if (is_dir(resource_path('views/vendor/subscription-form'))) {
             $this->loadViewsFrom(resource_path('views/vendor/subscription-form'), 'subscription');
@@ -36,8 +36,8 @@ class SubscriptionServiceProvider extends ServiceProvider
             $this->loadMigrationsFrom(database_path('migrations'));
         }
 
-        if (is_dir(base_path('langs'))) {
-            $this->loadTranslationsFrom(base_path('langs'), 'subscription');
+        if (is_dir(base_path('lang'))) {
+            $this->loadTranslationsFrom(base_path('lang'), 'subscription');
         }
     }
 
