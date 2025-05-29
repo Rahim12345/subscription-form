@@ -65,3 +65,30 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('/subscribe', SubscriptionController::class);
 ```
+
+## Subscription inputundan məlumatı ajax ilə göndərmək üçün
+
+```
+<script>
+    $(document).ready(function () {
+        $('#subscriptionBtn').click(function () {
+            let email = $('#subscriberEmail').val();
+
+            $.ajax({
+                type: 'POST',
+                url: '{{ route('subscribe.store') }}',
+                data: {email, _token: '{{ csrf_token() }}'},
+                success: function (response) {
+                    $('#subscriberEmail').val(null);
+                    toastr.success(response.message);
+                },
+                error: function (myErrors) {
+                    $.each(myErrors.responseJSON.errors, function (key, value) {
+                        toastr.error(value);
+                    });
+                }
+            })
+        })
+    })
+</script>
+```
