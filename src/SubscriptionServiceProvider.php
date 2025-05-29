@@ -45,7 +45,7 @@ class SubscriptionServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->commands([
-            RsCode\SubscriptionForm\Console\Commands\InstallSubscriptionCommand::class,
+            \RsCode\SubscriptionForm\Console\Commands\InstallSubscriptionCommand::class,
         ]);
     }
 }
