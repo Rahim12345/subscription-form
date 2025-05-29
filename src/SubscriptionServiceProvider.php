@@ -28,11 +28,17 @@ class SubscriptionServiceProvider extends ServiceProvider
             __DIR__ . '/../src/langs/az/rs.php' => base_path('langs/az/rs.php'),
         ], 'langs');
 
-        $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
+        if (is_dir(resource_path('views/vendor/subscription-form'))) {
+            $this->loadViewsFrom(resource_path('views/vendor/subscription-form'), 'subscription');
+        }
 
-        $this->loadViewsFrom(__DIR__ . '/views', 'subscription');
+        if (is_dir(database_path('migrations'))) {
+            $this->loadMigrationsFrom(database_path('migrations'));
+        }
 
-        $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
+        if (is_dir(base_path('langs'))) {
+            $this->loadTranslationsFrom(base_path('langs'), 'subscription');
+        }
     }
 
 

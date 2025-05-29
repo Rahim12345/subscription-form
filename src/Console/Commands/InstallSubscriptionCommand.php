@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\File;
 
 class InstallSubscriptionCommand extends Command
 {
-    protected string $signature = 'subscription:install';
-    protected string $description = 'Install the Subscription package (views, migration, controller, routes)';
+    protected $signature = 'subscription:install';
+    protected $description = 'Install the Subscription package (views, migration, controller, routes)';
 
     public function handle(): void
     {
